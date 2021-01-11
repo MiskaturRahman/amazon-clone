@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Header from "./Header/Header";
+import Home from "./Home/Home";
 
 
 function App() {
@@ -16,14 +17,16 @@ function App() {
 
         <Switch>
           <Route path="/checkout">
+            <Header />
             <h1>Hello Its ema-john checkout</h1>
           </Route>
           <Route path="/login">
+            <Header />
             <h1>Login</h1>
           </Route>
           <Route path="/">
             <Header />
-            <h1>Hello Its ema-john Ecommerce site</h1>
+            <Home />
           </Route>
         </Switch>
       </div>
