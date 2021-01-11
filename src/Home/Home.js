@@ -10,6 +10,9 @@ import carousel4 from '../images/intro4.jpg';
 import carousel5 from '../images/intro5.jpg';
 import carousel6 from '../images/intro6.jpg';
 import carousel7 from '../images/intro7.jpg';
+import Product from '../Product/Product';
+import { Link } from 'react-router-dom';
+import product from '../images/product.jpg'
 function Home() {
 
     return (
@@ -74,6 +77,18 @@ function Home() {
                     />
                 </Carousel.Item>
             </Carousel>
+
+            {/* Products */}
+
+            <Product
+                id="1"
+                title="Amazon Basics"
+                image={product}
+                price="starts from $11.50"
+                rating={5}
+            />
+
+
         </section>
 
     )
