@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import Checkout from "./Checkout/Checkout";
 import Header from "./Header/Header";
 import Home from "./Home/Home";
 
@@ -18,7 +19,7 @@ function App() {
         <Switch>
           <Route path="/checkout">
             <Header />
-            <h1>Hello Its ema-john checkout</h1>
+            <Checkout />
           </Route>
           <Route path="/login">
             <Header />

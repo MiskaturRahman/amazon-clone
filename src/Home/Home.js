@@ -11,26 +11,33 @@ import carousel5 from '../images/intro5.jpg';
 import carousel6 from '../images/intro6.jpg';
 import carousel7 from '../images/intro7.jpg';
 import Product from '../Product/Product';
-import { Link } from 'react-router-dom';
+
 import product from '../images/product.jpg'
+import product1 from '../images/product1.jpg'
+import product2 from '../images/product2.jpg'
+import product3 from '../images/product3.jpg'
+import product4 from '../images/product4.jpg'
+import product5 from '../images/product5.jpg'
+import product6 from '../images/product6.jpg'
+import product7 from '../images/product7.jpg'
 function Home() {
 
     return (
 
         <section className="home">
-            <Carousel>
+            <Carousel className="carousel">
                 <Carousel.Item interval={2000}>
                     <img
                         className="home__image d-block w-100"
                         src={carousel0}
-                        alt="First slide"
+                        alt=""
                     />
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
                     <img
                         className="home__image d-block w-100"
                         src={carousel1}
-                        alt="Third slide"
+                        alt=" "
                     />
 
                 </Carousel.Item>
@@ -38,55 +45,110 @@ function Home() {
                     <img
                         className="home__image d-block w-100"
                         src={carousel2}
-                        alt="Third slide"
+                        alt=" "
                     />
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
                     <img
                         className="home__image d-block w-100"
                         src={carousel3}
-                        alt="Third slide"
+                        alt=" "
                     />
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
                     <img
                         className="home__image d-block w-100"
                         src={carousel4}
-                        alt="Third slide"
+                        alt=" "
                     />
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
                     <img
                         className="home__image d-block w-100"
                         src={carousel5}
-                        alt="Third slide"
+                        alt=" "
                     />
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
                     <img
                         className="home__image d-block w-100"
                         src={carousel6}
-                        alt="Third slide"
+                        alt=" "
                     />
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
                     <img
                         className="home__image d-block w-100"
                         src={carousel7}
-                        alt="Third slide"
+                        alt=" "
                     />
                 </Carousel.Item>
             </Carousel>
 
             {/* Products */}
 
-            <Product
-                id="1"
-                title="Amazon Basics"
-                image={product}
-                price="starts from $11.50"
-                rating={5}
-            />
+            <div className="home__row">
+                <Product
+                    id="1"
+                    title="Amazon Basics"
+                    image={product}
+                    price="$12.50"
+                    rating={5}
+                />
+                <Product
+                    id="1"
+                    title="Shop by Catagory"
+                    image={product1}
+                    price="starts from $20.50"
+                    rating={5}
+                />
+            </div>
+            <div className="home__row">
+                <Product
+                    id="1"
+                    title="Amazon Basics"
+                    image={product2}
+                    price="$12.50"
+                    rating={5}
+                />
+                <Product
+                    id="1"
+                    title="Amazon Basics"
+                    image={product3}
+                    price="$12.50"
+                    rating={5}
+                />
+                <Product
+                    id="1"
+                    title="Amazon Basics"
+                    image={product4}
+                    price="$12.50"
+                    rating={5}
+                />
+            </div>
+            <div className="home__row">
+                <Product
+                    id="1"
+                    title="Amazon Basics"
+                    image={product6}
+                    price="$12.50"
+                    rating={5}
+                />
+                <Product
+                    id="1"
+                    title="Amazon Basics"
+                    image={product5}
+                    price="$12.50"
+                    rating={5}
+                />
+                <Product
+                    id="1"
+                    title="Amazon Basics"
+                    image={product7}
+                    price="$12.50"
+                    rating={5}
+                />
+            </div>
 
 
         </section>
