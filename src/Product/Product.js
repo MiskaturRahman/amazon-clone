@@ -1,5 +1,6 @@
 import React from 'react'
 import './Product.css'
+import { Link } from 'react-router-dom'
 
 function Product({ id, title, image, price, rating }) {
     return (
@@ -22,6 +23,8 @@ function Product({ id, title, image, price, rating }) {
 
             <img src={image} alt="" />
             <button>Add to busket</button>
+
+            <Link>see more </Link>
         </div>
 
     )
