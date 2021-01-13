@@ -1,1 +1,1 @@
-# Amazon Clone, build with react, bootstrap, firebase
+# Amazon Clone. build with react, bootstrap, firebase
