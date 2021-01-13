@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useStateValue } from '../StateProvider/StateProvider';
 import './Product.css'
-import { Link } from 'react-router-dom'
+
 
 function Product({ id, title, image, price, rating }) {
     const [{ basket }, dispatch] = useStateValue();
@@ -40,14 +40,10 @@ function Product({ id, title, image, price, rating }) {
             </div>
 
             <img src={image} alt="" />
-<<<<<<< HEAD
             <button onClick={addToBasket}>Add to busket</button>
-=======
-            <button>Add to busket</button>
 
->>>>>>> 27a0f82ab0edaa4cac3c72afc8e074a25eff6123
             <Link>see more </Link>
-        </div>
+        </div >
 
     )
 }
